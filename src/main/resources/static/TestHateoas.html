@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Test Hateoas</title>
+<style type="text/css">
+h3.descTest {
+	font-family: monospace;
+	color: hsl(239,60%,50%);
+	font-size: 1.25em;
+}
+
+table.tablaDatos{
+ 	width: 100%;
+ 	margin-top: 1em;
+ 	line-height: 1.6em;
+}
+table.tablaDatos caption{
+	font-size: 1.2em;
+	margin-bottom: 4px;
+}
+table.tablaDatos th{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+table.tablaDatos th:nth-child(odd){
+	background-color: hsl(224,99%,50%);
+	color: white;
+}
+table.tablaDatos th:nth-child(even){
+	background-color: hsl(224,90%,30%);
+	color: white;
+}
+
+table.tablaDatos tr:nth-child(odd){
+	background-color: hsl(224,80%,90%);
+	color: hsl(224,99%,20%);
+}
+table.tablaDatos tr:nth-child(even){
+	background-color: hsl(44,90%,95%);
+	color: hsl(224,99%,20%);
+}
+table.tablaDatos td{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 6px;
+}
+table.tablaDatos td:nth-child(4){
+	text-align: center;
+}
+table.tablaDatos td:nth-child(5){
+	text-align: center;
+}
+
+</style>
+<script type="text/javascript">
+var tbodyArmadoras;
+var tableModelos;
+function actualizaListaArmadoras(armadorasJSON){
+	var arrHtmlArmadoras = armadorasJSON.data.map( function(x){
+		    return "<tr>"
+					+"<td>"	+ x.clave + "</td>"
+					+"<td>"	+ x.nombre + "</td>"
+					+"<td>"	+ x.paisOrigen + "</td>"
+					+"<td>"	+ x.nPlantas + "</td>"
+					+"<td><button onclick='getModelosXArmadora(" 
+							+ '"'+ x._links.modelos.href + '"' + ")'>Ver modelos</button></td>"
+					+"</tr>";} );
+	var textoHtmlTbody = "";
+	for(trI of arrHtmlArmadoras){
+		textoHtmlTbody += trI;
+	}
+	tbodyArmadoras.innerHTML = textoHtmlTbody;
+}
+
+function getArmadoras(){
+	  var xhttp=new XMLHttpRequest();
+	  xhttp.open("GET","./webapi/armadoras");
+	  xhttp.responseType = "json";
+	  xhttp.setRequestHeader("Accept","application/hal+json");
+	  xhttp.send();
+	  xhttp.onreadystatechange=function(){
+	        if(xhttp.readyState == 4 && xhttp.status == 200){
+	        	actualizaListaArmadoras(xhttp.response);
+	        }
+	  }			
+}
+function getModelosXArmadora(uri){
+	  var xhttp=new XMLHttpRequest();
+	  xhttp.open("GET","./" + uri);
+	  xhttp.responseType = "json";
+	  xhttp.setRequestHeader("Accept","application/json");
+	  xhttp.send();
+	  xhttp.onreadystatechange=function(){
+	        if(xhttp.readyState == 4 && xhttp.status == 200){
+	        	actualizaListaModelos(xhttp.response);
+	        }
+	  }			
+}
+function actualizaListaModelos(modelosJSON){
+	var arrHtmlModelos = modelosJSON.map( function(x){
+		    return "<tr>"
+					+"<td>"	+ x.claveModelo + "</td>"
+					+"<td>"	+ x.nombre + "</td>"
+					+"<td>"	+ x.version + "</td>"
+					+"<td>"	+ ( x.importado ? "si" : "no") + "</td>"
+					+"</tr>";} );
+	var textoHtmlTbody = "";
+	for(trI of arrHtmlModelos){
+		textoHtmlTbody += trI;
+	}
+	textoHtmlTablaModelos = "<thead>"
+						   + "<caption>Modelos</caption>"
+	                       + "<tr>"
+	                       + "<th>clave modelo</th>"
+	                       + "<th>nombre</th>"
+	                       + "<th>versi&oacute;n</th>"
+	                       + "<th>importado</th>"
+	                       + "</tr></thead>"
+	                       + "<tbody>"
+	                       + textoHtmlTbody
+	                       + "</tbody>"
+	tableModelos.innerHTML = textoHtmlTablaModelos;
+}
+
+window.onload = function() {
+	tbodyArmadoras = document.getElementById("idListaArmadoras");
+	tableModelos = document.getElementById("idTablaModelos");
+	getArmadoras();
+}
+</script>
+</head>
+<body>
+	<div id="idDivArmadoras" >
+		<h3 class="descTest">test GET /armadoras (con "Accept" = "application/hal+json")</h3>
+		<table id="idTablaArmadoras" class="tablaDatos">
+			<caption>Armadoras en servidor</caption>
+			<thead>
+				<tr>
+					<th>Clave</th>
+					<th>Nombre</th>
+					<th>Pa&iacute;s de origen</th>
+					<th>Plantas en M&eacute;xico</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="idListaArmadoras">
+
+			</tbody>
+		</table>
+		<table id="idTablaModelos" class="tablaDatos">
+		</table>
+	</div>
+
+</body>
+</html>
