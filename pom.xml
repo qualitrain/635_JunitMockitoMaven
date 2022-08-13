@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -15,27 +17,13 @@
 
 	<properties>
 		<java.version>11</java.version>
-	</properties>
-
+		<pathRepoReleases>file:///C:/Users/quali/releases</pathRepoReleases>
+		<pathRepoSnapshots>file:///C:/Users/quali/snapshots</pathRepoSnapshots>
+	</properties>	
     <scm>
         <connection>scm:git:git@github.com:qualitrain/635_JunitMockitoMaven.git</connection>
-<!--         <developerConnection>scm:git:git@github.com:qualitrain/635_JunitMockitoMaven.git</developerConnection> -->
-<!--         <url>https://github.com/qualitrain/635_JunitMockitoMaven.git</url> -->
-<!--         <tag>v@{project.version}</tag> -->
-      <tag>635_JunitMockitoMaven-v0.1.1</tag>
-  </scm>
-	<distributionManagement>
-		<snapshotRepository>
-			<id>repoLocal</id>
-			<url>file:///C:/Users/quali/snapshots</url>
-			<name>RepositorioSnapshotsLocal</name>
-		</snapshotRepository>
-		<site>
-			<id>sitioDocProyecto</id>
-			<name>Repositorio de Documentacion</name>
-			<url>file:///C:/Users/quali/docProys</url>
-		</site>
-	</distributionManagement>
+        <tag>635_JunitMockitoMaven-v0.1.1</tag>
+    </scm>
     
 	<dependencies>
 		<dependency>
@@ -147,5 +135,22 @@
 
 		</plugins>
 	</reporting>
-
+	<distributionManagement>
+		<snapshotRepository>
+			<id>repoLocalSnaps</id>
+			<url>${pathRepoSnapshots}</url>
+			<name>RepositorioSnapshotsLocal</name>
+		</snapshotRepository>
+		<repository>
+			<id>repoLocalReleases</id>
+			<url>${pathRepoReleases}</url>
+			<name>RepositorioReleases</name>
+		</repository>
+		<site>
+			<id>sitioDocProyecto</id>
+			<name>Repositorio de Documentacion</name>
+			<url>file:///C:/Users/quali/docProys</url>
+		</site>
+	</distributionManagement>
+	<!--invocar así: mvn deploy -DaltDeploymentRepository=repoLocal::default::file:///C:/Users/quali/snapshots -->
 </project>
