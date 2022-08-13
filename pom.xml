@@ -17,20 +17,10 @@
 
 	<properties>
 		<java.version>11</java.version>
-	</properties>
+		<pathRepoReleases>file:///C:/Users/quali/releases</pathRepoReleases>
+		<pathRepoSnapshots>file:///C:/Users/quali/snapshots</pathRepoSnapshots>
+	</properties>	
 
-	<distributionManagement>
-		<snapshotRepository>
-			<id>repoLocal</id>
-			<url>file:///C:/Users/quali/snapshots</url>
-			<name>RepositorioSnapshotsLocal</name>
-		</snapshotRepository>
-		<site>
-			<id>sitioDocProyecto</id>
-			<name>Repositorio de Documentacion</name>
-			<url>file:///C:/Users/quali/docProys</url>
-		</site>
-	</distributionManagement>
     <scm>
         <connection>scm:git:git@github.com:qualitrain/635_JunitMockitoMaven.git</connection>
         <tag>HEAD</tag>
@@ -146,5 +136,22 @@
 
 		</plugins>
 	</reporting>
-
+	<distributionManagement>
+		<snapshotRepository>
+			<id>repoLocalSnaps</id>
+			<url>${pathRepoSnapshots}</url>
+			<name>RepositorioSnapshotsLocal</name>
+		</snapshotRepository>
+		<repository>
+			<id>repoLocalReleases</id>
+			<url>${pathRepoReleases}</url>
+			<name>RepositorioReleases</name>
+		</repository>
+		<site>
+			<id>sitioDocProyecto</id>
+			<name>Repositorio de Documentacion</name>
+			<url>file:///C:/Users/quali/docProys</url>
+		</site>
+	</distributionManagement>
+	<!-- se puede invocar así: mvn deploy -DaltDeploymentRepository=repoLocal::default::file:///C:/Users/quali/snapshots -->
 </project>
