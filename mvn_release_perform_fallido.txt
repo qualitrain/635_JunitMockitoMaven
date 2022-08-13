@@ -1,0 +1,380 @@
+C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven>mvn release:perform
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -------------------< org.qtx:635_JunitMockitoMaven >--------------------
+[INFO] Building 635_JunitMockitoMaven 0.1.2-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-release-plugin:3.0.0-M6:perform (default-cli) @ 635_JunitMockitoMaven ---
+[INFO] starting perform goal, composed of 3 phases: verify-completed-prepare-phases, checkout-project-from-scm, run-perform-goals
+[INFO] 1/3 perform:verify-completed-prepare-phases        
+[INFO] 2/3 perform:checkout-project-from-scm
+[INFO] Checking out the project to perform the release ...
+[INFO] Executing: cmd.exe /X /C "git clone --depth 1 --branch 635_JunitMockitoMaven-v0.1.1 git@github.com:qualitrain/635_JunitMockitoMaven.git checkout"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target
+[INFO] Executing: cmd.exe /X /C "git ls-remote git@github.com:qualitrain/635_JunitMockitoMaven.git"
+[INFO] Working directory: C:\Users\quali\AppData\Local\Temp
+[INFO] Executing: cmd.exe /X /C "git fetch git@github.com:qualitrain/635_JunitMockitoMaven.git"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout
+[INFO] Executing: cmd.exe /X /C "git checkout 635_JunitMockitoMaven-v0.1.1"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout
+[INFO] Executing: cmd.exe /X /C "git ls-files"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout
+[INFO] 3/3 perform:run-perform-goals
+[INFO] Invoking perform goals in directory C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout
+[INFO] Executing goals 'deploy site-deploy'...
+[INFO] [INFO] Scanning for projects...
+[INFO] [INFO] 
+[INFO] [INFO] -------------------< org.qtx:635_JunitMockitoMaven >--------------------
+[INFO] [INFO] Building 635_JunitMockitoMaven v0.1.1
+[INFO] [INFO] --------------------------------[ jar ]---------------------------------
+[INFO] [INFO] 
+[INFO] [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] [INFO] Copying 1 resource
+[INFO] [INFO] Copying 2 resources
+[INFO] [INFO]
+[INFO] [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Changes detected - recompiling the module!
+[INFO] [INFO] Compiling 16 source files to C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout\target\classes
+[INFO] [INFO] 
+[INFO] [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] [INFO] Copying 1 resource
+[INFO] [INFO] 
+[INFO] [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Changes detected - recompiling the module!
+[INFO] [INFO] Compiling 2 source files to C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout\target\test-classes
+[INFO] [INFO] 
+[INFO] [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] 
+[INFO] [INFO] -------------------------------------------------------
+[INFO] [INFO]  T E S T S
+[INFO] [INFO] -------------------------------------------------------
+[INFO] [INFO] Running org.qtx.EjmApiRestApplicationTests
+[INFO] 01:54:58.802 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.c
+ontext.cache.DefaultCacheAwareContextLoaderDelegate]
+[INFO] 01:54:58.823 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.co
+ntext.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+[INFO] 01:54:58.869 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.qtx.EjmApiRestApplicationT
+ests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+[INFO] 01:54:58.894 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for
+ test class [org.qtx.EjmApiRestApplicationTests], using SpringBootContextLoader
+[INFO] 01:54:58.906 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.qtx.EjmA
+piRestApplicationTests]: class path resource [org/qtx/EjmApiRestApplicationTests-context.xml] does not exist
+[INFO] 01:54:58.907 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.qtx.EjmA
+piRestApplicationTests]: class path resource [org/qtx/EjmApiRestApplicationTestsContext.groovy] does not exist
+[INFO] 01:54:58.907 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.qtx.Ej
+mApiRestApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] 01:54:58.909 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test c
+lass [org.qtx.EjmApiRestApplicationTests]: EjmApiRestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration
+.
+[INFO] 01:54:58.999 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org
+.springframework.test.context.ActiveProfiles] and class [org.qtx.EjmApiRestApplicationTests]
+[INFO] 01:54:59.100 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\qt
+x\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout\target\classes\org\qtx\EjmApiRestApplication.class]
+[INFO] 01:54:59.102 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.qtx.EjmApiRestApplication 
+for test class org.qtx.EjmApiRestApplicationTests
+[INFO] 01:54:59.249 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [org.qtx.Ej
+mApiRestApplicationTests]: using defaults.
+[INFO] 01:54:59.250 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from locatio
+n [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecu
+tionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServic
+eServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.tes
+t.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support
+.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.su
+pport.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlSc
+riptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[INFO] 01:54:59.281 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.conte
+xt.web.ServletTestExecutionListener@7c1e2a2d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@333dd51e, org.springframework.boo
+t.test.mock.mockito.MockitoTestExecutionListener@52d645b1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2101b44a, org
+.springframework.test.context.support.DirtiesContextTestExecutionListener@2cc3ad05, org.springframework.test.context.transaction.TransactionalTestExecutionListener@710
+b18a6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@119020fb, org.springframework.test.context.event.EventPublishingTestExecutionListener@3d9f
+6567, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@c055c54, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionLis
+tener@25e2ab5a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@35e5d0e5, org.springframework.boot.test.autoconf
+igure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@73173f63, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@55562
+aa9]
+[INFO] 01:54:59.306 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@
+54a67a45 testClass = EjmApiRestApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConf
+iguration@7d42c224 testClass = EjmApiRestApplicationTests, locations = '{}', classes = '{class org.qtx.EjmApiRestApplication}', contextInitializerClasses = '[]', activ
+eProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextC
+ustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3eb91815, org.springframework.boot.test.json.DuplicateJsonObjectContextCus
+tomizerFactory$DuplicateJsonObjectContextCustomizer@74f6c5d8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.
+client.TestRestTemplateContextCustomizer@189cbd7c, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.
+test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5f77d0f9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.
+test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]
+], class annotated with @DirtiesContext [false] with mode [null].
+[INFO] 01:54:59.365 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false
+, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+[INFO]
+[INFO]   .   ____          _            __ _ _
+[INFO]  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[INFO] ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[INFO]  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[INFO]   '  |____| .__|_| |_|_| |_\__, | / / / /
+[INFO]  =========|_|==============|___/=/_/_/_/
+[INFO]  :: Spring Boot ::        (v2.2.4.RELEASE)
+[INFO] 
+[INFO] 2022-08-13 01:55:00.077  INFO 15296 --- [           main] org.qtx.EjmApiRestApplicationTests       : Starting EjmApiRestApplicationTests on DESKTOP-8ICFS71 with
+ PID 15296 (started by quali in C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout)
+[INFO] 2022-08-13 01:55:00.079  INFO 15296 --- [           main] org.qtx.EjmApiRestApplicationTests       : No active profile set, falling back to default profiles: de
+fault
+[INFO] 2022-08-13 01:55:01.510  INFO 15296 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] 2022-08-13 01:55:01.597  INFO 15296 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 2 J
+PA repository interfaces.
+[INFO] 2022-08-13 01:55:02.143  INFO 15296 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTrans
+actionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by al
+l BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2022-08-13 01:55:03.250  INFO 15296 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[INFO] 2022-08-13 01:55:03.521  INFO 15296 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[INFO] 2022-08-13 01:55:04.452  INFO 15296 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit '
+default'
+[INFO] 2022-08-13 01:55:04.466  INFO 15296 --- [           main] org.qtx.persistencia.GestorDatosJPA      : GestorDatosJPA()
+[INFO] 2022-08-13 01:55:04.501  INFO 15296 --- [           main] org.qtx.persistencia.GestorDatosMemoria  : GestorDatosMemoria()
+[INFO] 2022-08-13 01:55:04.526 DEBUG 15296 --- [           main] org.qtx.persistencia.GestorDatosMemoria  : insertarArmadora(Armadora [clave=VW, nombre= Volkswagen Nut
+zfahrzeuge, paisOrigen=Alemania, nPlantas=1])
+[INFO] 2022-08-13 01:55:04.526 DEBUG 15296 --- [           main] org.qtx.persistencia.GestorDatosMemoria  : insertarArmadora(Armadora [clave=Nissan, nombre=Nissan de M
+éxico S.A. de C.V., paisOrigen=Japón, nPlantas=1])
+[INFO] 2022-08-13 01:55:04.527 DEBUG 15296 --- [           main] org.qtx.persistencia.GestorDatosMemoria  : insertarArmadora(Armadora [clave=Mazda, nombre=Mazda Intern
+ational, paisOrigen=Japón, nPlantas=1])
+[INFO] 2022-08-13 01:55:04.528 DEBUG 15296 --- [           main] org.qtx.persistencia.GestorDatosMemoria  : insertarArmadora(Armadora [clave=Ford, nombre=Ford Motor Co
+mpany, paisOrigen=EUA, nPlantas=1])
+[INFO] 2022-08-13 01:55:04.528 DEBUG 15296 --- [           main] org.qtx.persistencia.GestorDatosMemoria  : insertarArmadora(Armadora [clave=GM, nombre=General Motors 
+Company, paisOrigen=EUA, nPlantas=2])
+[INFO] 2022-08-13 01:55:04.528 DEBUG 15296 --- [           main] org.qtx.persistencia.GestorDatosMemoria  : insertarArmadora(Armadora [clave=Fiat, nombre=Fabbrica Ital
+iana Automobili Torino, paisOrigen=Italia, nPlantas=1])
+[INFO] 2022-08-13 01:55:04.528 DEBUG 15296 --- [           main] org.qtx.persistencia.GestorDatosMemoria  : insertarArmadora(Armadora [clave=BMW, nombre=BMW European c
+ars Corporation, paisOrigen=Alemania, nPlantas=0])
+[INFO] 2022-08-13 01:55:04.546  INFO 15296 --- [           main] o.q.p.GestorDatosRepositoryJPA           : GestorDatosRepositoryJPA()
+[INFO] 2022-08-13 01:55:05.234  INFO 15296 --- [           main] org.qtx.servicios.ArmadoraRest           : ArmadoraRest()
+[INFO] 2022-08-13 01:55:05.311  INFO 15296 --- [           main] org.qtx.web.Controlador                  : Controlador()
+[INFO] 2022-08-13 01:55:06.045  INFO 15296 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] 2022-08-13 01:55:06.619  INFO 15296 --- [           main] org.qtx.EjmApiRestApplicationTests       : Started EjmApiRestApplicationTests in 7.175 seconds (JVM ru
+nning for 8.748)
+[INFO] [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.092 s - in org.qtx.EjmApiRestApplicationTests
+[INFO] [INFO] Running org.qtx.persistencia.TestGestorDatos
+[INFO] 2022-08-13 01:55:06.791  INFO 15296 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found f
+or test class [org.qtx.persistencia.TestGestorDatos], using SpringBootContextLoader
+[INFO] 2022-08-13 01:55:06.797  INFO 15296 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class 
+[org.qtx.persistencia.TestGestorDatos]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] 2022-08-13 01:55:06.798  INFO 15296 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test cla
+ss [org.qtx.persistencia.TestGestorDatos]: TestGestorDatos does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] 2022-08-13 01:55:06.867  INFO 15296 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.qtx.EjmApiRestApplicatio
+n for test class org.qtx.persistencia.TestGestorDatos
+[INFO] 2022-08-13 01:55:06.871  INFO 15296 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from locat
+ion [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExe
+cutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServ
+iceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.t
+est.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.suppo
+rt.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.
+support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.Sql
+ScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[INFO] 2022-08-13 01:55:06.875  INFO 15296 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.con
+text.web.ServletTestExecutionListener@578c99ac, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ca30886, org.springframework.b
+oot.test.mock.mockito.MockitoTestExecutionListener@7bf16972, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@eee26bd, or
+g.springframework.test.context.support.DirtiesContextTestExecutionListener@3d1c8f35, org.springframework.test.context.transaction.TransactionalTestExecutionListener@49
+8f5728, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@39451d92, org.springframework.test.context.event.EventPublishingTestExecutionListener@466
+10fc9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1fdd5517, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionL
+istener@2cd877d3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3d605657, org.springframework.boot.test.autoco
+nfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@73b10975, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@631
+8ff9]
+[INFO] 2022-08-13 01:55:06.881  INFO 15296 --- [           main] org.qtx.persistencia.TestGestorDatos     : TestgestorDatos()
+[INFO] 2022-08-13 01:55:06.891 DEBUG 15296 --- [           main] org.qtx.persistencia.TestGestorDatos     : TestgestorDatos().testGetArmadoraXID_Inexistente_returnNull
+()
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] 2022-08-13 01:55:07.115 DEBUG 15296 --- [           main] o.q.p.GestorDatosRepositoryJPA           : getArmadoraXID(XXXXX)
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] 2022-08-13 01:55:07.133  INFO 15296 --- [           main] org.qtx.persistencia.TestGestorDatos     : TestgestorDatos()
+[INFO] 2022-08-13 01:55:07.138 DEBUG 15296 --- [           main] org.qtx.persistencia.TestGestorDatos     : TestgestorDatos().testGetArmadoraXID()
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: delete from Armadora where clave=?
+[INFO] 2022-08-13 01:55:07.330 DEBUG 15296 --- [           main] o.q.p.GestorDatosRepositoryJPA           : getArmadoraXID(TestArm)
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: insert into Armadora (nPlantas, nombre, paisOrigen, clave) values (?, ?, ?, ?)
+[INFO] 2022-08-13 01:55:07.446 DEBUG 15296 --- [           main] o.q.p.GestorDatosRepositoryJPA           : getArmadoraXID(TestArm)
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] 2022-08-13 01:55:07.466  INFO 15296 --- [           main] org.qtx.persistencia.TestGestorDatos     : TestgestorDatos()
+[INFO] 2022-08-13 01:55:07.471 DEBUG 15296 --- [           main] org.qtx.persistencia.TestGestorDatos     : TestgestorDatos().testInsertarArmadora_ConModelos()        
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_0_, modeloauto0_.claveArmadora as claveArm5_1_0_, modeloauto0_.importado as importad2_1_0_, modeloauto
+0_.nombre as nombre3_1_0_, modeloauto0_.version as version4_1_0_, armadora1_.clave as clave1_0_1_, armadora1_.nPlantas as nPlantas2_0_1_, armadora1_.nombre as nombre3_
+0_1_, armadora1_.paisOrigen as paisOrig4_0_1_ from ModeloAuto modeloauto0_ left outer join Armadora armadora1_ on modeloauto0_.claveArmadora=armadora1_.clave where mod
+eloauto0_.claveModelo=?
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_0_, modeloauto0_.claveArmadora as claveArm5_1_0_, modeloauto0_.importado as importad2_1_0_, modeloauto
+0_.nombre as nombre3_1_0_, modeloauto0_.version as version4_1_0_, armadora1_.clave as clave1_0_1_, armadora1_.nPlantas as nPlantas2_0_1_, armadora1_.nombre as nombre3_
+0_1_, armadora1_.paisOrigen as paisOrig4_0_1_ from ModeloAuto modeloauto0_ left outer join Armadora armadora1_ on modeloauto0_.claveArmadora=armadora1_.clave where mod
+eloauto0_.claveModelo=?
+[INFO] Hibernate: delete from ModeloAuto where claveModelo=?
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_0_, modeloauto0_.claveArmadora as claveArm5_1_0_, modeloauto0_.importado as importad2_1_0_, modeloauto
+0_.nombre as nombre3_1_0_, modeloauto0_.version as version4_1_0_, armadora1_.clave as clave1_0_1_, armadora1_.nPlantas as nPlantas2_0_1_, armadora1_.nombre as nombre3_
+0_1_, armadora1_.paisOrigen as paisOrig4_0_1_ from ModeloAuto modeloauto0_ left outer join Armadora armadora1_ on modeloauto0_.claveArmadora=armadora1_.clave where mod
+eloauto0_.claveModelo=?
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_0_, modeloauto0_.claveArmadora as claveArm5_1_0_, modeloauto0_.importado as importad2_1_0_, modeloauto
+0_.nombre as nombre3_1_0_, modeloauto0_.version as version4_1_0_, armadora1_.clave as clave1_0_1_, armadora1_.nPlantas as nPlantas2_0_1_, armadora1_.nombre as nombre3_
+0_1_, armadora1_.paisOrigen as paisOrig4_0_1_ from ModeloAuto modeloauto0_ left outer join Armadora armadora1_ on modeloauto0_.claveArmadora=armadora1_.clave where mod
+eloauto0_.claveModelo=?
+[INFO] Hibernate: delete from ModeloAuto where claveModelo=?
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_0_, modeloauto0_.claveArmadora as claveArm5_1_0_, modeloauto0_.importado as importad2_1_0_, modeloauto
+0_.nombre as nombre3_1_0_, modeloauto0_.version as version4_1_0_, armadora1_.clave as clave1_0_1_, armadora1_.nPlantas as nPlantas2_0_1_, armadora1_.nombre as nombre3_
+0_1_, armadora1_.paisOrigen as paisOrig4_0_1_ from ModeloAuto modeloauto0_ left outer join Armadora armadora1_ on modeloauto0_.claveArmadora=armadora1_.clave where mod
+eloauto0_.claveModelo=?
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_0_, modeloauto0_.claveArmadora as claveArm5_1_0_, modeloauto0_.importado as importad2_1_0_, modeloauto
+0_.nombre as nombre3_1_0_, modeloauto0_.version as version4_1_0_, armadora1_.clave as clave1_0_1_, armadora1_.nPlantas as nPlantas2_0_1_, armadora1_.nombre as nombre3_
+0_1_, armadora1_.paisOrigen as paisOrig4_0_1_ from ModeloAuto modeloauto0_ left outer join Armadora armadora1_ on modeloauto0_.claveArmadora=armadora1_.clave where mod
+eloauto0_.claveModelo=?
+[INFO] Hibernate: delete from ModeloAuto where claveModelo=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: delete from Armadora where clave=?
+[INFO] 2022-08-13 01:55:07.851 DEBUG 15296 --- [           main] o.q.p.GestorDatosRepositoryJPA           : getArmadoraXID(Armadora)
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: insert into Armadora (nPlantas, nombre, paisOrigen, clave) values (?, ?, ?, ?)
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_0_, modeloauto0_.claveArmadora as claveArm5_1_0_, modeloauto0_.importado as importad2_1_0_, modeloauto
+0_.nombre as nombre3_1_0_, modeloauto0_.version as version4_1_0_ from ModeloAuto modeloauto0_ where modeloauto0_.claveModelo=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_0_, modeloauto0_.claveArmadora as claveArm5_1_0_, modeloauto0_.importado as importad2_1_0_, modeloauto
+0_.nombre as nombre3_1_0_, modeloauto0_.version as version4_1_0_ from ModeloAuto modeloauto0_ where modeloauto0_.claveModelo=?
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_0_, modeloauto0_.claveArmadora as claveArm5_1_0_, modeloauto0_.importado as importad2_1_0_, modeloauto
+0_.nombre as nombre3_1_0_, modeloauto0_.version as version4_1_0_ from ModeloAuto modeloauto0_ where modeloauto0_.claveModelo=?
+[INFO] Hibernate: insert into ModeloAuto (claveArmadora, importado, nombre, version, claveModelo) values (?, ?, ?, ?, ?)
+[INFO] Hibernate: insert into ModeloAuto (claveArmadora, importado, nombre, version, claveModelo) values (?, ?, ?, ?, ?)
+[INFO] Hibernate: insert into ModeloAuto (claveArmadora, importado, nombre, version, claveModelo) values (?, ?, ?, ?, ?)
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_, modeloauto0_.claveArmadora as claveArm5_1_, modeloauto0_.importado as importad2_1_, modeloauto0_.nom
+bre as nombre3_1_, modeloauto0_.version as version4_1_ from ModeloAuto modeloauto0_ left outer join Armadora armadora1_ on modeloauto0_.claveArmadora=armadora1_.clave 
+where armadora1_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_, modeloauto0_.claveArmadora as claveArm5_1_, modeloauto0_.importado as importad2_1_, modeloauto0_.nom
+bre as nombre3_1_, modeloauto0_.version as version4_1_ from ModeloAuto modeloauto0_ left outer join Armadora armadora1_ on modeloauto0_.claveArmadora=armadora1_.clave 
+where armadora1_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] 2022-08-13 01:55:08.245 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : Armadora [clave=Armadora, nombre=Armadora Agrupada SA de CV
+, paisOrigen=Brasil, nPlantas=0] equivaleA(Armadora [clave=Armadora, nombre=Armadora Agrupada SA de CV, paisOrigen=Brasil, nPlantas=0])
+[INFO] 2022-08-13 01:55:08.247 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): n modelos de this:3
+[INFO] 2022-08-13 01:55:08.248 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): n modelos de otraArmadora:3
+[INFO] 2022-08-13 01:55:08.248 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): armadoras equivalen campo a campo
+[INFO] 2022-08-13 01:55:08.248 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): this SI tiene modelos
+[INFO] 2022-08-13 01:55:08.248 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): Coinciden en cantidad de modelos asociados
+[INFO] 2022-08-13 01:55:08.249 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : Armadora [clave=Armadora, nombre=Armadora Agrupada SA de CV
+, paisOrigen=Brasil, nPlantas=0] equivaleA(Armadora [clave=Armadora, nombre=Armadora Agrupada SA de CV, paisOrigen=Brasil, nPlantas=0])
+[INFO] 2022-08-13 01:55:08.249 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): n modelos de this:3
+[INFO] 2022-08-13 01:55:08.249 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): n modelos de otraArmadora:3
+[INFO] 2022-08-13 01:55:08.249 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): armadoras equivalen campo a campo
+[INFO] 2022-08-13 01:55:08.253 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): this SI tiene modelos
+[INFO] 2022-08-13 01:55:08.253 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): Coinciden en cantidad de modelos asociados
+[INFO] 2022-08-13 01:55:08.258  INFO 15296 --- [           main] org.qtx.persistencia.TestGestorDatos     : TestgestorDatos()
+[INFO] 2022-08-13 01:55:08.262 DEBUG 15296 --- [           main] org.qtx.persistencia.TestGestorDatos     : TestgestorDatos().testInsertarArmadora_Plana()
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: delete from Armadora where clave=?
+[INFO] 2022-08-13 01:55:08.313 DEBUG 15296 --- [           main] o.q.p.GestorDatosRepositoryJPA           : getArmadoraXID(NvaArma)
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: insert into Armadora (nPlantas, nombre, paisOrigen, clave) values (?, ?, ?, ?)
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select modeloauto0_.claveModelo as claveMod1_1_, modeloauto0_.claveArmadora as claveArm5_1_, modeloauto0_.importado as importad2_1_, modeloauto0_.nom
+bre as nombre3_1_, modeloauto0_.version as version4_1_ from ModeloAuto modeloauto0_ left outer join Armadora armadora1_ on modeloauto0_.claveArmadora=armadora1_.clave 
+where armadora1_.clave=?
+[INFO] 2022-08-13 01:55:08.387 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : Armadora [clave=NvaArma, nombre=Armadora Mexicana SA de CV,
+ paisOrigen=Brasil, nPlantas=0] equivaleA(Armadora [clave=NvaArma, nombre=Armadora Mexicana SA de CV, paisOrigen=Brasil, nPlantas=0])
+[INFO] 2022-08-13 01:55:08.387 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): this NO tiene modelos asociados:
+[INFO] 2022-08-13 01:55:08.387 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): otraArmadora NO tiene modelos asociados:   
+[INFO] 2022-08-13 01:55:08.387 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): armadoras equivalen campo a campo
+[INFO] 2022-08-13 01:55:08.387 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : Armadora [clave=NvaArma, nombre=Armadora Mexicana SA de CV,
+ paisOrigen=Brasil, nPlantas=0] equivaleA(Armadora [clave=NvaArma, nombre=Armadora Mexicana SA de CV, paisOrigen=Brasil, nPlantas=0])
+[INFO] 2022-08-13 01:55:08.387 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): this NO tiene modelos asociados:
+[INFO] 2022-08-13 01:55:08.387 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): otraArmadora NO tiene modelos asociados:
+[INFO] 2022-08-13 01:55:08.387 DEBUG 15296 --- [           main] org.qtx.entidades.Armadora               : .equivaleA(..): armadoras equivalen campo a campo
+[INFO] 2022-08-13 01:55:08.390  INFO 15296 --- [           main] org.qtx.persistencia.TestGestorDatos     : TestgestorDatos()
+[INFO] 2022-08-13 01:55:08.393 DEBUG 15296 --- [           main] org.qtx.persistencia.TestGestorDatos     : TestgestorDatos().testInsertarArmadora_Duplicada()
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: delete from Armadora where clave=?
+[INFO] 2022-08-13 01:55:08.506 DEBUG 15296 --- [           main] o.q.p.GestorDatosRepositoryJPA           : getArmadoraXID(Armadora02)
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] Hibernate: insert into Armadora (nPlantas, nombre, paisOrigen, clave) values (?, ?, ?, ?)
+[INFO] 2022-08-13 01:55:08.577 DEBUG 15296 --- [           main] o.q.p.GestorDatosRepositoryJPA           : getArmadoraXID(Armadora02)
+[INFO] Hibernate: select armadora0_.clave as clave1_0_0_, armadora0_.nPlantas as nPlantas2_0_0_, armadora0_.nombre as nombre3_0_0_, armadora0_.paisOrigen as paisOrig4_
+0_0_ from Armadora armadora0_ where armadora0_.clave=?
+[INFO] [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.748 s - in org.qtx.persistencia.TestGestorDatos
+[INFO] 2022-08-13 01:55:08.675  INFO 15296 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'    
+[INFO] 2022-08-13 01:55:08.679  INFO 15296 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'defa
+ult'
+[INFO] 2022-08-13 01:55:08.681  INFO 15296 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[INFO] 2022-08-13 01:55:08.706  INFO 15296 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] [INFO] 
+[INFO] [INFO] Results:
+[INFO] [INFO]
+[INFO] [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] [INFO]
+[INFO] [INFO]
+[INFO] [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Building jar: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout\target\635_JunitMockitoMaven-v0.1.1.jar
+[INFO] [INFO] 
+[INFO] [INFO] --- spring-boot-maven-plugin:2.2.4.RELEASE:repackage (repackage) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Replacing main artifact with repackaged archive
+[INFO] [INFO]
+[INFO] [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Installing C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout\target\635_JunitMockitoMaven-v0.1.1.jar to C:\Users\quali\.m2\repos
+itory\org\qtx\635_JunitMockitoMaven\v0.1.1\635_JunitMockitoMaven-v0.1.1.jar
+[INFO] [INFO] Installing C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\checkout\pom.xml to C:\Users\quali\.m2\repository\org\qtx\635_JunitMockitoMa
+ven\v0.1.1\635_JunitMockitoMaven-v0.1.1.pom
+[INFO] [INFO]
+[INFO] [INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] BUILD FAILURE
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] Total time:  19.785 s
+[INFO] [INFO] Finished at: 2022-08-13T01:55:11-05:00
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy (default-deploy) on project 635_JunitMockitoMaven: Deployment failed: r
+epository element was not specified in the POM inside distributionManagement element or in -DaltDeploymentRepository=id::layout::url parameter -> [Help 1]
+[INFO] [ERROR]
+[INFO] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[INFO] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[INFO] [ERROR]
+[INFO] [ERROR] For more information about the errors and possible solutions, please read the following articles:
+[INFO] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  27.910 s
+[INFO] Finished at: 2022-08-13T01:55:11-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:3.0.0-M6:perform (default-cli) on project 635_JunitMockitoMaven: Maven execution failed, e
+xit code: 1 -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

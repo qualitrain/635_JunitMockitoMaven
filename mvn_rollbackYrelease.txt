@@ -1,0 +1,154 @@
+SALIDA RESUMIDA DE EJECUTAR COMANDOS:
+mvn release:rollback // Tras un release:prepare insatisfactorio
+mvn release:prepare
+
+C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven>mvn release:rollback
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< org.qtx:635_JunitMockitoMaven >--------------------
+[INFO] Building 635_JunitMockitoMaven 0.0.2-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-release-plugin:3.0.0-M6:rollback (default-cli) @ 635_JunitMockitoMaven ---
+[INFO] starting rollback goal, composed of 3 phases: restore-backup-poms, scm-commit-rollback, remove-scm-tag
+[INFO] 1/3 rollback:restore-backup-poms
+[INFO] 2/3 rollback:scm-commit-rollback
+[INFO] Checking in modified POMs...
+[INFO] Executing: cmd.exe /X /C "git add -- pom.xml"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven
+[INFO] Executing: cmd.exe /X /C "git rev-parse --show-prefix"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven
+[INFO] Executing: cmd.exe /X /C "git status --porcelain ."
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven
+[WARNING] Ignoring unrecognized line: ?? pom.xml.releaseBackup
+[WARNING] Ignoring unrecognized line: ?? release.properties
+[INFO] Executing: cmd.exe /X /C "git commit --verbose -F C:\Users\quali\AppData\Local\Temp\maven-scm-433296038.commit"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven
+[INFO] Executing: cmd.exe /X /C "git symbolic-ref HEAD"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven
+[INFO] Executing: cmd.exe /X /C "git push git@github.com:qualitrain/635_JunitMockitoMaven.git refs/heads/main:refs/heads/main"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven
+[INFO] 3/3 rollback:remove-scm-tag
+[INFO] Removing tag with the label 635_JunitMockitoMaven-0.0.1 ...
+[INFO] Executing: cmd.exe /X /C "git tag -d 635_JunitMockitoMaven-0.0.1"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven
+[INFO] Executing: cmd.exe /X /C "git push --delete git@github.com:qualitrain/635_JunitMockitoMaven.git refs/tags/635_JunitMockitoMaven-0.0.1"
+[INFO] Working directory: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven
+[INFO] Cleaning up after release...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.974 s
+[INFO] Finished at: 2022-08-13T00:29:42-05:00
+[INFO] ------------------------------------------------------------------------
+
+
+
+C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven>mvn release:prepare  
+
+[INFO] --- maven-release-plugin:3.0.0-M6:prepare (default-cli) @ 635_JunitMockitoMaven ---
+[INFO] starting prepare goal, composed of 17 phases: 
+check-poms, 
+scm-check-modifications, 
+check-dependency-snapshots, 
+create-backup-poms, 
+map-release-versions, 
+input-variables, 
+map-development-versions, 
+rewrite-poms-for-release, 
+generate-release-poms, 
+run-preparation-goals, 
+scm-commit-release, 
+scm-tag, 
+rewrite-poms-for-development, 
+remove-release-poms, 
+run-completion-goals, 
+scm-commit-development, 
+end-release
+
+[INFO] 1/17 prepare:check-poms
+[INFO] 2/17 prepare:scm-check-modifications
+[INFO] Verifying that there are no local modifications...
+[INFO] Executing: git rev-parse --show-prefix
+[INFO] Executing: git status --porcelain .
+[INFO] 3/17 prepare:check-dependency-snapshots
+[INFO] Checking dependencies and plugins for snapshots ...
+[INFO] 4/17 prepare:create-backup-poms
+[INFO] Creating pom.xml backup with .releaseBackup suffix
+
+[INFO] 5/17 prepare:map-release-versions
+What is the release version for "635_JunitMockitoMaven"? (635_JunitMockitoMaven) 0.0.1: : v0.1.1
+
+[INFO] 6/17 prepare:input-variables
+What is the SCM release tag or label for "635_JunitMockitoMaven"? (635_JunitMockitoMaven) 635_JunitMockitoMaven-v0.1.1: :
+      
+[INFO] 7/17 prepare:map-development-versions
+What is the new development version for "635_JunitMockitoMaven"? (635_JunitMockitoMaven) 1.1-SNAPSHOT: : 0.1.2-SNAPSHOT
+
+[INFO] 8/17 prepare:rewrite-poms-for-release
+[INFO] Transforming pom.xml 635_JunitMockitoMaven '635_JunitMockitoMaven'...
+[INFO] 9/17 prepare:generate-release-poms
+[INFO] Not generating release POMs
+[INFO] 10/17 prepare:run-preparation-goals
+[INFO] Executing goals 'clean verify'...
+[INFO] [INFO] -------------------< org.qtx:635_JunitMockitoMaven >--------------------
+[INFO] [INFO] Building 635_JunitMockitoMaven v0.1.1
+[INFO] [INFO] --------------------------------[ jar ]---------------------------------
+[INFO] [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Deleting C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target
+[INFO] [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Changes detected - recompiling the module!
+[INFO] [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Results:
+[INFO] [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Building jar: C:\qtx\workspaces\2022\StsTestting02\635_JunitMockitoMaven\target\635_JunitMockitoMaven-v0.1.1.jar
+[INFO] [INFO] --- spring-boot-maven-plugin:2.2.4.RELEASE:repackage (repackage) @ 635_JunitMockitoMaven ---
+[INFO] [INFO] Replacing main artifact with repackaged archive
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] BUILD SUCCESS
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] Total time:  19.984 s
+[INFO] [INFO] Finished at: 2022-08-13T00:43:20-05:00
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] 11/17 prepare:scm-commit-release
+[INFO] Checking in modified POMs...
+[INFO] git add -- pom.xml
+[INFO] git rev-parse --show-prefix
+[INFO] git status --porcelain .
+[WARNING] Ignoring unrecognized line: ?? pom.xml.releaseBackup
+[WARNING] Ignoring unrecognized line: ?? release.properties
+[INFO] git commit --verbose -F C:\Users\quali\AppData\Local\Temp\maven-scm-332780180.commit
+[INFO] git symbolic-ref HEAD
+[INFO] git push git@github.com:qualitrain/635_JunitMockitoMaven.git refs/heads/main:refs/heads/main
+[INFO] 12/17 prepare:scm-tag
+[INFO] Tagging release with the label 635_JunitMockitoMaven-v0.1.1...
+[INFO] git tag -F C:\Users\quali\AppData\Local\Temp\maven-scm-2050857470.commit 635_JunitMockitoMaven-v0.1.1
+[INFO] git push git@github.com:qualitrain/635_JunitMockitoMaven.git refs/tags/635_JunitMockitoMaven-v0.1.1
+[INFO] git ls-files
+[INFO] 13/17 prepare:rewrite-poms-for-development
+[INFO] Transforming pom.xml 635_JunitMockitoMaven '635_JunitMockitoMaven'...
+[INFO] 14/17 prepare:remove-release-poms
+[INFO] Not removing release POMs
+[INFO] 15/17 prepare:run-completion-goals
+[INFO] 16/17 prepare:scm-commit-development
+[INFO] Checking in modified POMs...
+[INFO] git add -- pom.xml
+[INFO] git rev-parse --show-prefix
+[INFO] git status --porcelain .
+[WARNING] Ignoring unrecognized line: ?? pom.xml.releaseBackup
+[WARNING] Ignoring unrecognized line: ?? release.properties
+[INFO] git commit --verbose -F C:\Users\quali\AppData\Local\Temp\maven-scm-1629846964.commit
+[INFO] git symbolic-ref HEAD
+[INFO] git push git@github.com:qualitrain/635_JunitMockitoMaven.git refs/heads/main:refs/heads/main
+[INFO] 17/17 prepare:end-release
+[INFO] Release preparation complete.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:02 min
+[INFO] Finished at: 2022-08-13T00:43:26-05:00
+[INFO] ------------------------------------------------------------------------
