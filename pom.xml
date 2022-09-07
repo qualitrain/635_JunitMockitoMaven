@@ -137,6 +137,7 @@
 		        <version>3.0.0-M6</version>
 		        <configuration>
 		          <tagNameFormat>v@{project.version}</tagNameFormat>
+                  <releaseProfiles>QA</releaseProfiles>
 		        </configuration>
             </plugin>
        </plugins>
