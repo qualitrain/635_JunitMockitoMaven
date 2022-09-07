@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.qtx</groupId>
 	<artifactId>635_JunitMockitoMaven</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>635_JunitMockitoMaven</name>
 	<description>Ejemplo de implementación de pruebas sistematizadas con JUnit 5 + Mockito + SpringBoot Testing</description>
 
@@ -45,7 +45,7 @@
 
     <scm>
         <connection>scm:git:git@github.com:qualitrain/635_JunitMockitoMaven.git</connection>
-        <tag>v1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
     
 	<dependencies>
